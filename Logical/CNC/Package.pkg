@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.2.98?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="DataObject" Language="Cnc">IProg</Object>
+    <Object Type="DataObject" Language="Cnc">WProg</Object>
+    <Object Type="DataObject" Language="Cnc">UProg</Object>
+    <Object Type="DataObject" Language="Cnc">isProg</Object>
+    <Object Type="DataObject" Language="Cnc">XProg</Object>
+    <Object Type="DataObject" Language="Cnc">RProg</Object>
+  </Objects>
+</Package>

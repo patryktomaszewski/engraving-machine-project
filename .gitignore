@@ -1,0 +1,16 @@
+#Automation Studio projects
+#Ignore project binaries
+/Binaries
+
+#Ignore project diagnosis
+/Diagnosis
+
+#Ignore project temporary files
+/Temp
+
+#Ignore .set and .isopen files
+/*.set
+/*.isopen
+
+#Ignore debug.log files
+debug.log

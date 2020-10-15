@@ -1,0 +1,6 @@
+VAR
+	gdiStopButton : BOOL; (*emergency mechine stopping (INPUT)*)
+	gdiObjSensor : BOOL; (*the vaule is TRUE if sensor detects object (INPUT)*)
+	gdoMillingLamp : BOOL; (*Lamp is on ig milling cutter is revolving (OUTPUT)*)
+	gdoProcessLamp : BOOL; (*Lamp is ON if obj is being processed (OUTPUT)*)
+END_VAR

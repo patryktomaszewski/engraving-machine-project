@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ndef:Navigation id="AutoNavigation" xmlns:ndef="http://www.br-automation.com/iat2015/navigationDefinition/v2">
+  <NavigationPaths>
+    <NavigationPath refId="MainPage">
+      <Destination refId="Charts" index="0" />
+      <Destination refId="Alarms" index="1" />
+	  <Destination refId="AlarmsHistory" index="2" />
+	  <Destination refId="SDM" index="3" />					
+    </NavigationPath>
+	
+	<NavigationPath refId="Charts">
+		<Destination refId="MainPage" index="0" />
+		<Destination refId="Alarms" index="1" />
+		<Destination refId="AlarmsHistory" index="2" />	
+		<Destination refId="SDM" index="3" />		
+	</NavigationPath>
+	
+	<NavigationPath refId="Alarms">
+		<Destination refId="MainPage" index="0" />
+		<Destination refId="Charts" index="1" />
+		<Destination refId="AlarmsHistory" index="2" />	
+		<Destination refId="SDM" index="3" />	
+	</NavigationPath>
+	
+	<NavigationPath refId="AlarmsHistory">
+		<Destination refId="MainPage" index="0" />
+		<Destination refId="Charts" index="1" />
+		<Destination refId="Alarms" index="2" />
+		<Destination refId="SDM" index="3" />			
+	</NavigationPath>
+	
+	<NavigationPath refId="SDM">
+		<Destination refId="MainPage" index="0" />
+		<Destination refId="Charts" index="1" />
+		<Destination refId="Alarms" index="2" />
+		<Destination refId="AlarmsHistory" index="3" />		
+	</NavigationPath>													
+  </NavigationPaths>
+</ndef:Navigation>

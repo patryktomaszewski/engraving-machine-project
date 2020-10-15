@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT</prop>
+  </header>
+  <body>
+    <tu tuid="MainPage">
+      <tuv xml:lang="pl">
+        <seg>Strona Główna</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Servus Welt!</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Main Page</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Alarms">
+      <tuv xml:lang="pl">
+        <seg>Alarmy</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Alarms</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AlarmsHistory">
+      <tuv xml:lang="pl">
+        <seg>Historia Alarmów</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Alarms History</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Charts">
+      <tuv xml:lang="pl">
+        <seg>Wykresy</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Charts</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SDM">
+      <tuv xml:lang="pl">
+        <seg>SDM</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>SDM</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Position">
+      <tuv xml:lang="pl">
+        <seg>Pozycja</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Position</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Velocity">
+      <tuv xml:lang="pl">
+        <seg>Prędkość</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Velocity</seg>
+      </tuv>
+    </tu>
+    <tu tuid="EmergencyStop">
+      <tuv xml:lang="pl">
+        <seg>STOP Awaryjny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Emergency STOP</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LoggedAs">
+      <tuv xml:lang="pl">
+        <seg>Zalogowany jako:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Logged in as:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Login">
+      <tuv xml:lang="pl">
+        <seg>Zaloguj</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Login</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Logout">
+      <tuv xml:lang="pl">
+        <seg>Wyloguj</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Logout</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ChooseProgr">
+      <tuv xml:lang="pl">
+        <seg>Wybierz Program</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Choose Program</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AutMode">
+      <tuv xml:lang="pl">
+        <seg>Tryb Automatyczny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Automatic Mode</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AutModeOn">
+      <tuv xml:lang="pl">
+        <seg>Tryb Automatyczny ON / OFF</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Automatic Mode ON / OFF</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AutModeConf">
+      <tuv xml:lang="pl">
+        <seg>Tryb Automatyczny Konfiguracja</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Automatic Mode Configuration</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ManMode">
+      <tuv xml:lang="pl">
+        <seg>Tryb Manualny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Manual Mode</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ManModeOn">
+      <tuv xml:lang="pl">
+        <seg>Tryb Manualny ON / OFF</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Manual Mode ON / OFF</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ManModeConf">
+      <tuv xml:lang="pl">
+        <seg>Tryb Manualny Konfiguracja</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Manual Mode Configuration</seg>
+      </tuv>
+    </tu>
+    <tu tuid="StopMode">
+      <tuv xml:lang="pl">
+        <seg>Tryb STOP</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>STOP Mode</seg>
+      </tuv>
+    </tu>
+    <tu tuid="StopModeOn">
+      <tuv xml:lang="pl">
+        <seg>Tryb STOP ON / OFF</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>STOP Mode ON / OFF</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Power">
+      <tuv xml:lang="pl">
+        <seg>ENERGIA</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>POWER</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PowerOn">
+      <tuv xml:lang="pl">
+        <seg>Energia ON / OFF</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Power ON / OFF</seg>
+      </tuv>
+    </tu>
+    <tu tuid="JogMode">
+      <tuv xml:lang="pl">
+        <seg>Tryb Jog ON / OFF ( musisz wyłączyć tryb Jog , aby wybrać pozycję i prędkość osi)</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Jog Mode ON / OFF (You must turn OFF Jog mode to choose position and velocity)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="moveAxis">
+      <tuv xml:lang="pl">
+        <seg>Przesuń wybraną oś</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Move Chosen Axis</seg>
+      </tuv>
+    </tu>
+    <tu tuid="X">
+      <tuv xml:lang="pl">
+        <seg>Oś X</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>X AXIS</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Y">
+      <tuv xml:lang="pl">
+        <seg>Oś Y</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Y AXIS</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Z">
+      <tuv xml:lang="pl">
+        <seg>Oś Z</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Z AXIS</seg>
+      </tuv>
+    </tu>
+    <tu tuid="S">
+      <tuv xml:lang="pl">
+        <seg>Oś S</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>S AXIS</seg>
+      </tuv>
+    </tu>
+    <tu tuid="XW">
+      <tuv xml:lang="pl">
+        <seg>Wykres Osi X</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>X Axis Chart</seg>
+      </tuv>
+    </tu>
+    <tu tuid="XY">
+      <tuv xml:lang="pl">
+        <seg>Wykres Osi Y</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Y Axis Chart</seg>
+      </tuv>
+    </tu>
+    <tu tuid="XZ">
+      <tuv xml:lang="pl">
+        <seg>Wykres Osi Z</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Z Axis Chart</seg>
+      </tuv>
+    </tu>
+    <tu tuid="XS">
+      <tuv xml:lang="pl">
+        <seg>Wykres Osi S</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>S Axis Chart</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AckALL">
+      <tuv xml:lang="pl">
+        <seg>Potwierdź wszystkie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Acknowledge All</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ackSelect">
+      <tuv xml:lang="pl">
+        <seg>Potwierdź wybrany element</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Acknowledge Selected Item</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ackemerg">
+      <tuv xml:lang="pl">
+        <seg>Potwierdź alarm przycisk alarmowy</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Acknowledge Emergency Button Alarms</seg>
+      </tuv>
+    </tu>
+    <tu tuid="acke2short">
+      <tuv xml:lang="pl">
+        <seg>Potwierdź alarm element za mały</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Acknowledge Too Small Elements Alarms</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ChossePosVel">
+      <tuv xml:lang="pl">
+        <seg>Wybierz Pozycję i Prędkość</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Choose Position and Velocity</seg>
+      </tuv>
+    </tu>
+    <tu tuid="actMode">
+      <tuv xml:lang="pl">
+        <seg>Aktualny Tryb</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Actual Mode</seg>
+      </tuv>
+    </tu>
+    <tu tuid="username">
+      <tuv xml:lang="pl">
+        <seg>Nazwa Użytkownika</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Username</seg>
+      </tuv>
+    </tu>
+    <tu tuid="pasword">
+      <tuv xml:lang="pl">
+        <seg>Hasło</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Password</seg>
+      </tuv>
+    </tu>
+    <tu tuid="chooseNumElem">
+      <tuv xml:lang="pl">
+        <seg>Wybierz ilość elementów do wygrawerowania</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Choose number of Elements to process</seg>
+      </tuv>
+    </tu>
+    <tu tuid="actNum">
+      <tuv xml:lang="pl">
+        <seg>LIczba wygrawerowanych elementów</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Number of processed elements</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

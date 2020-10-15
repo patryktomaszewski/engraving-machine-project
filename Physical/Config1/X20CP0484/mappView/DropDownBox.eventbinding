@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="DropDownBox_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		<EventBinding id="ContentMainPage.ProgramsList.SelectedIndexChanged">
+			<Source contentRefId="ContentMainPage" widgetRefId="ProgramsList" xsi:type="widgets.brease.DropDownBox.Event" event="SelectedIndexChanged" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.ShowMessageBox"
+							type="OK"
+							message="Program has been changed"
+							header="Program change"
+						icon="Warning"/>
+					</Target>
+				
+				</Action>
+			</EventHandler>
+		</EventBinding>
+	</Bindings>
+</EventBindingSet>

@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="Loging_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:JogModeOn" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.TabItem.Action"
+						contentRefId="ContentMainPage" widgetRefId="TabItem4">
+						<Method xsi:type="widgets.brease.TabItem.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.TabItem.Action"
+						contentRefId="ContentMainPage" widgetRefId="TabItem4">
+						<Method xsi:type="widgets.brease.TabItem.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:JogModeOn" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.TabItem.Action"
+						contentRefId="ContentMainPage" widgetRefId="TabItem3">
+						<Method xsi:type="widgets.brease.TabItem.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.TabItem.Action"
+						contentRefId="ContentMainPage" widgetRefId="TabItem3">
+						<Method xsi:type="widgets.brease.TabItem.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<!-- Choosing values for X else blocked-->	
+	
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:X2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccYaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccYaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+		
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:X2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccZaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccZaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:X2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccSaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccSaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+		
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:Y2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccXaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccXaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>		
+				
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:Y2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccZaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccZaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+			
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:Y2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccSaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccSaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+
+		
+
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:Z2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccXaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccXaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+		
+
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:Z2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccYaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccYaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+		
+
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:Z2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccSaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccSaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+		
+
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:S2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccXaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccXaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+		
+
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:S2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccYaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccYaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:S2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccZaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="AccZaxis">
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+			
+
+	
+	
+	
+	
+		<!-- changing values blocking -->
+	
+	
+	
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:X2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InXPos">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InXPos">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+	
+	
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:X2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InXVel">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InXVel">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+			
+	
+	
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:Y2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InYPos">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InYPos">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+	
+	
+	
+	
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:Y2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InYVel">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InYVel">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+	
+	
+	
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:Z2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InZPos">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InZPos">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+	
+	
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:Z2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InZVel">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InZVel">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+	
+	
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:S2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InSPos">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InSPos">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+	
+	
+	
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:S2Move" event="ValueChanged"/>
+			<EventHandler condition="newValue = true">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InSVel">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>	
+			<EventHandler condition="newValue = false">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="InSVel">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+	
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:MpCnc3Axis_0.Y" event="ValueChanged"/>
+			<EventHandler condition="newValue &lt;= -99.2">
+				<Action>
+					<Target xsi:type="widgets.brease.MomentaryPushButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="MomentaryPushButton9">
+						<Method xsi:type="widgets.brease.MomentaryPushButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		
+		
+		<EventHandler condition="newValue &gt;= -99.2">
+			<Action>
+				<Target xsi:type="widgets.brease.MomentaryPushButton.Action"
+					contentRefId="ContentMainPage" widgetRefId="MomentaryPushButton9">
+					<Method xsi:type="widgets.brease.MomentaryPushButton.Action.SetEnable"
+					value="true" />
+				</Target>
+			</Action>
+		</EventHandler>
+	</EventBinding>
+		
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:MpCnc3Axis_0.Y" event="ValueChanged"/>
+			<EventHandler condition="newValue &gt;= 399.2">
+				<Action>
+					<Target xsi:type="widgets.brease.MomentaryPushButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="MomentaryPushButton8">
+						<Method xsi:type="widgets.brease.MomentaryPushButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		
+		
+			<EventHandler condition="newValue &lt;= 399.2">
+				<Action>
+					<Target xsi:type="widgets.brease.MomentaryPushButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="MomentaryPushButton8">
+						<Method xsi:type="widgets.brease.MomentaryPushButton.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:MpCnc3Axis_0.Z" event="ValueChanged"/>
+			<EventHandler condition="newValue &gt;= 299.2">
+				<Action>
+					<Target xsi:type="widgets.brease.MomentaryPushButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="MomentaryPushButton10">
+						<Method xsi:type="widgets.brease.MomentaryPushButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		
+		
+			<EventHandler condition="newValue &lt;= 299.2">
+				<Action>
+					<Target xsi:type="widgets.brease.MomentaryPushButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="MomentaryPushButton10">
+						<Method xsi:type="widgets.brease.MomentaryPushButton.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:MpCnc3Axis_0.Z" event="ValueChanged"/>
+			<EventHandler condition="newValue &lt;= 0.8">
+				<Action>
+					<Target xsi:type="widgets.brease.MomentaryPushButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="MomentaryPushButton11">
+						<Method xsi:type="widgets.brease.MomentaryPushButton.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		
+		
+			<EventHandler condition="newValue &gt;= 0.8">
+				<Action>
+					<Target xsi:type="widgets.brease.MomentaryPushButton.Action"
+						contentRefId="ContentMainPage" widgetRefId="MomentaryPushButton11">
+						<Method xsi:type="widgets.brease.MomentaryPushButton.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event"
+			refId="::Program1:NumOfElem" event="ValueChanged"/>
+			<EventHandler condition="newValue &gt;= 0.5">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="NumericInput1">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		
+		
+			<EventHandler condition="newValue = 0">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericInput.Action"
+						contentRefId="ContentMainPage" widgetRefId="NumericInput1">
+						<Method xsi:type="widgets.brease.NumericInput.Action.SetEnable"
+						value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+	</Bindings>
+</EventBindingSet>

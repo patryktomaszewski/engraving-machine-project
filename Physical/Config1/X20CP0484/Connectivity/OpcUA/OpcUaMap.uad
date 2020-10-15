@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="7" ArVersion="C4.72">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="gdiObjSensor" />
+        <Variable Name="gdiStopButton" />
+        <Variable Name="gdoProcessLamp" />
+      </GlobalVariables>
+      <Task Name="Program1">
+        <Variable Name="MpCnc3Axis_0">
+          <Variable Name="Power" />
+          <Variable Name="X" />
+          <Variable Name="Y" />
+          <Variable Name="Z" />
+        </Variable>
+        <Variable Name="Saxis">
+          <Variable Name="Position" />
+          <Variable Name="Velocity" />
+        </Variable>
+        <Variable Name="AutomaticON" />
+        <Variable Name="ManualON" />
+        <Variable Name="StopMode" />
+        <Variable Name="WorkingMode" />
+        <Variable Name="ActMode4MV" />
+        <Variable Name="Xaxis">
+          <Variable Name="Velocity" />
+        </Variable>
+        <Variable Name="Yaxis">
+          <Variable Name="Velocity" />
+        </Variable>
+        <Variable Name="Zaxis">
+          <Variable Name="Velocity" />
+        </Variable>
+        <Variable Name="ChooseProgr" />
+        <Variable Name="JogModeOn" />
+        <Variable Name="X2Move" />
+        <Variable Name="Y2Move" />
+        <Variable Name="Z2Move" />
+        <Variable Name="S2Move" />
+        <Variable Name="Moveaxis" />
+        <Variable Name="ManXPos" />
+        <Variable Name="ManXVel" />
+        <Variable Name="ManYPos" />
+        <Variable Name="ManYVel" />
+        <Variable Name="ManZPos" />
+        <Variable Name="ManZVel" />
+        <Variable Name="ManSPos" />
+        <Variable Name="ManSVel" />
+        <Variable Name="JogDownX" />
+        <Variable Name="JogDownY" />
+        <Variable Name="JogDownZ" />
+        <Variable Name="JogUpS" />
+        <Variable Name="JogUpX" />
+        <Variable Name="JogUpY" />
+        <Variable Name="JogUpZ" />
+        <Variable Name="EmergStop" />
+        <Variable Name="EmergStopAck" />
+        <Variable Name="AckALL" />
+        <Variable Name="AckAllButton" />
+        <Variable Name="Elem2SmallAck" />
+        <Variable Name="Elem2Small" />
+        <Variable Name="ShowWarning" />
+        <Variable Name="Sensor" />
+        <Variable Name="YState" />
+        <Variable Name="ZState" />
+        <Variable Name="XState" />
+        <Variable Name="SState" />
+        <Variable Name="Ymove" />
+        <Variable Name="YOff" />
+        <Variable Name="YOn" />
+        <Variable Name="Zmove" />
+        <Variable Name="ZOff" />
+        <Variable Name="ZOn" />
+        <Variable Name="Xmove" />
+        <Variable Name="XOff" />
+        <Variable Name="XOn" />
+        <Variable Name="Smove" />
+        <Variable Name="SOff" />
+        <Variable Name="SOn" />
+        <Variable Name="NumOfElem" />
+        <Variable Name="Elements2Done" />
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

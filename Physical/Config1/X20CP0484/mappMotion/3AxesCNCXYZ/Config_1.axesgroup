@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="gCncXYZ" Type="axesgroup">
+    <Selector ID="Type" Value="PathGenAxesGroup">
+      <Property ID="ProcessingTaskClass" Value="1" />
+      <Property ID="License" Value="1" />
+      <Group ID="PhysicalAxes">
+        <Group ID="JointAxes">
+          <Group ID="JointAxis[1]">
+            <Property ID="Name" Value="QX" />
+            <Property ID="AxisRef" Value="gAxisQX" />
+          </Group>
+          <Group ID="JointAxis[2]">
+            <Property ID="Name" Value="QY" />
+            <Property ID="AxisRef" Value="gAxisQY" />
+          </Group>
+          <Group ID="JointAxis[3]">
+            <Property ID="Name" Value="QZ" />
+            <Property ID="AxisRef" Value="gAxisQZ" />
+          </Group>
+        </Group>
+        <Group ID="SlaveAxes">
+          <Group ID="SlaveAxis[1]">
+            <Property ID="Name" Value="QS" />
+            <Property ID="AxisRef" Value="gAxisQS" />
+          </Group>
+        </Group>
+      </Group>
+      <Group ID="MechanicalSystem">
+        <Property ID="MechSysRef" Value="MechSys_3AxCNCXYZ" />
+      </Group>
+      <Group ID="BasicSettings">
+        <Selector ID="ModalDataBehaviour" Value="ResetToDefault" />
+        <Group ID="GeometryPlanning">
+          <Property ID="RoundingMode" Value="Standard" />
+          <Property ID="MaxCornerDeviation" Value="0.0" />
+          <Property ID="MaxTangentialTransitionDeviation" Value="0.0" />
+          <Property ID="MaxRadiusDeviation" Value="0.001" />
+          <Property ID="WorkingPlane" Value="XY" />
+        </Group>
+        <Selector ID="TrajectoryPlanning" Value="Basic">
+          <Selector ID="LimitCheckResolution" Value="UserDefinedTime">
+            <Property ID="Time" Value="0.01" />
+          </Selector>
+          <Selector ID="BufferTime" Value="UserDefinedTime">
+            <Property ID="Time" Value="0.1" />
+          </Selector>
+        </Selector>
+      </Group>
+      <Group ID="AxesGroupFeatures">
+        <Property ID="FeatureRef[1]" Value="Feature_Programs" />
+        <Property ID="FeatureRef[2]" Value="Feature_Jogging" />
+        <Property ID="FeatureRef[3]" Value="Feature_spindles" />
+      </Group>
+    </Selector>
+    <Selector ID="Alarms" Value="None" />
+  </Element>
+</Configuration>

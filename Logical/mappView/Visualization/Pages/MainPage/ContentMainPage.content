@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentMainPage" height="1100" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch1" top="100" left="20" width="200" height="60" zIndex="0" text="$IAT/Power" permissionOperate="['Operator', 'Service']" />
+    <Widget xsi:type="widgets.brease.TabControl" id="TabControl1" top="0" left="840" width="878" height="1100" zIndex="1" headerBackColor="rgba(192, 192, 192, 1)" backColor="rgba(192, 192, 192, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem1" left="0" width="250" height="50" zIndex="1" text="$IAT/actNum" backColor="rgba(128, 128, 128, 1)" textColor="rgba(255, 255, 255, 1)" enable="false" style="TabItem1">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Label" id="Label12" top="30" left="40" width="200" height="40" zIndex="0" text="$IAT/ChooseProgr" backColor="rgba(255, 255, 255, 1)" style="Description" />
+            <Widget xsi:type="widgets.brease.DropDownBox" id="ProgramsList" top="90" left="40" width="400" height="100" zIndex="1" dataProvider="[{'value':'0','text':'Draw I'},{'value':'1','text':'Draw i'},{'value':'2','text':'Draw W'},{'value':'3','text':'Draw U'},{'value':'4','text':'Draw X'},{'value':'5','text':'Draw R'}]" selectedValue="0" backColor="rgba(255, 255, 255, 1)" listBackColor="rgba(255, 255, 255, 1)" activeTextColor="rgba(0, 0, 0, 1)" />
+            <Widget xsi:type="widgets.brease.Image" id="Image13" top="230" left="140" width="240" height="170" zIndex="2" image="Media/SymbolLib/Symbols/InProgress.svg" imageColor="rgba(244, 164, 96, 1)" visible="false" />
+            <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="468" left="558" width="180" height="80" zIndex="3" minValue="1" permissionOperate="['Operator', 'Service']" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput1" top="590" left="558" width="180" height="70" zIndex="4" borderWidth="2px" backColor="rgba(169, 169, 169, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(255, 255, 255, 1)" permissionOperate="['Operator', 'Service']" />
+            <Widget xsi:type="widgets.brease.Label" id="Label21" top="460" left="180" width="342" height="81" zIndex="5" text="$IAT/chooseNumElem" borderWidth="2px" backColor="rgba(169, 169, 169, 1)" borderColor="rgba(255, 255, 255, 1)" borderStyle="solid" textColor="rgba(255, 255, 255, 1)" textAlign="center" style="Description" />
+            <Widget xsi:type="widgets.brease.Label" id="Label22" top="590" left="179" width="342" height="81" zIndex="6" text="$IAT/actNum" borderWidth="2px" backColor="rgba(169, 169, 169, 1)" borderColor="rgba(255, 255, 255, 1)" borderStyle="solid" textColor="rgba(255, 255, 255, 1)" textAlign="center" style="Description" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem2" left="0" width="250" height="50" zIndex="0" text="$IAT/ManModeConf" backColor="rgba(128, 128, 128, 1)" textColor="rgba(255, 255, 255, 1)" activeTextColor="rgba(255, 255, 255, 1)" style="TabItem1">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Label" id="Label13" top="30" left="20" width="610" height="50" zIndex="0" text="$IAT/JogMode" borderColor="rgba(0, 0, 0, 1)" textColor="rgba(0, 0, 0, 1)" style="Description" />
+            <Widget xsi:type="widgets.brease.TabControl" id="TabControl2" top="110" left="0" width="878" height="1100" zIndex="1" headerBackColor="rgba(192, 192, 192, 1)" backColor="rgba(192, 192, 192, 1)">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.TabItem" id="TabItem3" left="0" width="250" height="50" zIndex="1" text="$IAT/ChossePosVel" backColor="rgba(128, 128, 128, 1)" textColor="rgba(255, 255, 255, 1)" activeTextColor="rgba(255, 255, 255, 1)" style="TabItem1">
+                  <Widgets>
+                    <Widget xsi:type="widgets.brease.ToggleButton" id="AccXaxis" top="90" left="260" zIndex="0" text="$IAT/X" />
+                    <Widget xsi:type="widgets.brease.ToggleButton" id="AccYaxis" top="90" left="420" zIndex="1" text="$IAT/Y" />
+                    <Widget xsi:type="widgets.brease.ToggleButton" id="AccZaxis" top="90" left="580" zIndex="2" text="$IAT/Z" />
+                    <Widget xsi:type="widgets.brease.ToggleButton" id="AccSaxis" top="90" left="720" zIndex="3" text="$IAT/S" />
+                    <Widget xsi:type="widgets.brease.NumericInput" id="InXPos" top="170" left="240" width="160" zIndex="4" maxValue="2000" minValue="-2000" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" enable="false" />
+                    <Widget xsi:type="widgets.brease.NumericInput" id="InXVel" top="230" left="240" width="160" zIndex="5" maxValue="10000" unit="{'metric':'C16','imperial':'C16','imperial-us':'C16'}" unitAlign="right" enable="false" />
+                    <Widget xsi:type="widgets.brease.NumericInput" id="InYPos" top="170" left="420" width="140" zIndex="6" maxValue="400" minValue="-100" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" enable="false" />
+                    <Widget xsi:type="widgets.brease.NumericInput" id="InYVel" top="230" left="420" width="140" zIndex="7" maxValue="10000" unit="{'metric':'C16','imperial':'C16','imperial-us':'C16'}" unitAlign="right" enable="false" />
+                    <Widget xsi:type="widgets.brease.NumericInput" id="InSPos" top="170" left="720" width="140" zIndex="8" maxValue="10000000" minValue="-10000000" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" enable="false" />
+                    <Widget xsi:type="widgets.brease.NumericInput" id="InZPos" top="170" left="580" width="140" zIndex="9" maxValue="300" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" enable="false" />
+                    <Widget xsi:type="widgets.brease.NumericInput" id="InZVel" top="230" left="580" width="140" zIndex="10" maxValue="10000" unit="{'metric':'C16','imperial':'C16','imperial-us':'C16'}" unitAlign="right" enable="false" />
+                    <Widget xsi:type="widgets.brease.NumericInput" id="InSVel" top="230" left="720" width="140" zIndex="11" maxValue="167" unit="{'metric':'RPS','imperial':'RPS','imperial-us':'RPS'}" unitAlign="right" enable="false" />
+                    <Widget xsi:type="widgets.brease.ToggleButton" id="MoveAxis" top="390" left="320" width="200" height="50" zIndex="12" text="$IAT/moveAxis" />
+                    <Widget xsi:type="widgets.brease.Label" id="Label14" top="170" left="100" width="100" height="40" zIndex="13" text="$IAT/Position" backColor="rgba(255, 255, 255, 0)" borderColor="rgba(0, 0, 0, 1)" textColor="rgba(0, 0, 0, 1)" style="Description" />
+                    <Widget xsi:type="widgets.brease.Label" id="Label15" top="230" left="100" width="100" height="40" zIndex="14" text="$IAT/Velocity" borderColor="rgba(0, 0, 0, 1)" textColor="rgba(0, 0, 0, 1)" style="Description" />
+                  </Widgets>
+                </Widget>
+                <Widget xsi:type="widgets.brease.TabItem" id="TabItem4" left="0" width="250" height="50" zIndex="0" text="Jog" backColor="rgba(128, 128, 128, 1)" textColor="rgba(255, 255, 255, 1)" activeTextColor="rgba(255, 255, 255, 1)" enable="false" style="TabItem1">
+                  <Widgets>
+                    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButton1" top="70" left="80" width="120" height="70" zIndex="0" image="Media/SymbolLib/Arrow/ArrowUp.svg" text="X Up" />
+                    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButton7" top="170" left="80" width="120" height="70" zIndex="1" image="Media/SymbolLib/Arrow/ArrowDown.svg" text="X Down" />
+                    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButton8" top="70" left="360" width="120" height="70" zIndex="2" image="Media/SymbolLib/Arrow/ArrowUp.svg" text="Y Up" />
+                    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButton9" top="170" left="360" width="120" height="70" zIndex="3" image="Media/SymbolLib/Arrow/ArrowDown.svg" text="Y Down" />
+                    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButton10" top="70" left="620" width="120" height="70" zIndex="4" image="Media/SymbolLib/Arrow/ArrowUp.svg" text="Z Up" />
+                    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButton11" top="170" left="620" width="120" height="70" zIndex="5" image="Media/SymbolLib/Arrow/ArrowDown.svg" text="Z Down" />
+                    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch6" top="350" left="340" width="210" height="50" zIndex="6" text="Spindle ON / OFF" />
+                  </Widgets>
+                </Widget>
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch5" top="30" left="660" width="200" height="60" zIndex="2" text="JOG" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="40" left="20" width="200" height="40" zIndex="2" text="$IAT/PowerOn" style="Description" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch2" top="380" left="20" width="240" height="60" zIndex="3" text="$IAT/AutMode" permissionOperate="['Operator', 'Service']" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch3" top="540" left="20" width="240" height="60" zIndex="4" text="$IAT/ManMode" permissionOperate="['Service']" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="479" left="20" width="240" height="40" zIndex="5" text="$IAT/ManModeOn" style="Description" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="320" left="20" width="240" height="40" zIndex="6" text="$IAT/AutModeOn" style="Description" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="640" left="20" width="240" height="40" zIndex="7" text="$IAT/StopModeOn" style="Description" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch4" top="700" left="20" width="240" height="60" zIndex="8" text="$IAT/StopMode" backColor="rgba(255, 255, 255, 1)" permissionOperate="['Operator', 'Service']" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput1" top="100" left="380" width="200" height="60" zIndex="9" style="Output" />
+    <Widget xsi:type="widgets.brease.Label" id="Label5" top="40" left="360" width="200" height="40" zIndex="10" text="$IAT/actMode" style="Description" />
+    <Widget xsi:type="widgets.brease.Label" id="Label6" top="320" left="340" width="60" height="40" zIndex="11" text="$IAT/X" style="Description" />
+    <Widget xsi:type="widgets.brease.Label" id="Label7" top="400" left="340" width="60" height="40" zIndex="12" text="$IAT/Y" style="Description" />
+    <Widget xsi:type="widgets.brease.Label" id="Label8" top="479" left="340" width="60" height="40" zIndex="13" text="$IAT/Z" style="Description" />
+    <Widget xsi:type="widgets.brease.Label" id="Label9" top="560" left="340" width="60" height="40" zIndex="14" text="$IAT/S" style="Description" />
+    <Widget xsi:type="widgets.brease.Label" id="Label10" top="260" left="640" width="100" height="40" zIndex="15" text="$IAT/Velocity" style="Description" />
+    <Widget xsi:type="widgets.brease.Label" id="Label11" top="260" left="479" width="101" height="40" zIndex="16" text="$IAT/Position" style="Description" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="X_POS" top="320" left="400" width="200" zIndex="17" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="X_VEL" top="320" left="620" width="220" zIndex="18" unit="{'metric':'C16','imperial':'C16','imperial-us':'C16'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="S_POS" top="560" left="400" width="200" zIndex="19" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="Z_POS" top="479" left="400" width="200" zIndex="20" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="Y_POS" top="400" left="400" width="200" zIndex="21" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="Y_VEL" top="400" left="620" width="220" zIndex="22" unit="{'metric':'C16','imperial':'C16','imperial-us':'C16'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="Z_VEL" top="479" left="620" width="220" zIndex="23" unit="{'metric':'C16','imperial':'C16','imperial-us':'C16'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="S_VEL" top="560" left="620" width="220" zIndex="24" unit="{'metric':'RPS','imperial':'RPS','imperial-us':'RPS'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgPowerOn" top="180" left="80" zIndex="25" image="Media/SymbolLib/Symbols/On.svg" imageColor="rgba(124, 252, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgPowerOff" top="180" left="80" zIndex="26" image="Media/SymbolLib/Symbols/Off.svg" imageColor="rgba(255, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton1" top="918" left="20" width="260" height="80" zIndex="27" image="Media/SymbolLib/Symbols/Stop.svg" mouseDownImage="Media/SymbolLib/Symbols/Stop.svg" mouseDownText="Emergency STOP Active" text="$IAT/EmergencyStop" imageColor="rgba(255, 0, 0, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" borderStyle="double" borderWidth="5px" backColor="rgba(255, 255, 255, 1)" borderColor="rgba(255, 0, 0, 1)" textColor="rgba(255, 0, 0, 1)" mouseDownBackColor="rgba(255, 0, 0, 1)" mouseDownTextColor="rgba(255, 255, 255, 1)" checkedBackColor="rgba(255, 0, 0, 1)" checkedTextColor="rgba(255, 255, 255, 1)" checkedImageColor="rgba(255, 255, 255, 1)" checkedBorderColor="rgba(255, 0, 0, 1)" permissionOperate="['Operator', 'Service']" />
+    <Widget xsi:type="widgets.brease.Label" id="Label16" top="660" left="538" width="201" height="60" zIndex="28" text="Axis PLC Open State" textAlign="center" style="Description" />
+    <Widget xsi:type="widgets.brease.Label" id="Label17" top="759" left="419" width="60" height="40" zIndex="29" text="$IAT/X" style="Description" />
+    <Widget xsi:type="widgets.brease.Label" id="Label19" top="919" left="420" width="60" height="40" zIndex="30" text="$IAT/Z" style="Description" />
+    <Widget xsi:type="widgets.brease.Label" id="Label20" top="998" left="420" width="60" height="40" zIndex="31" text="$IAT/S" style="Description" />
+    <Widget xsi:type="widgets.brease.Label" id="Label18" top="839" left="419" width="60" height="40" zIndex="32" text="$IAT/Y" style="Description" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput2" top="759" left="520" width="280" height="41" zIndex="33" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput3" top="839" left="520" width="280" height="41" zIndex="34" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput4" top="919" left="520" width="280" height="41" zIndex="35" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput5" top="999" left="520" width="280" height="41" zIndex="36" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="740" left="320" width="80" height="60" zIndex="37" image="Media/SymbolLib/Media/Pause.svg" imageColor="rgba(255, 0, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="Image2" top="980" left="320" width="80" height="60" zIndex="38" image="Media/SymbolLib/Media/Pause.svg" imageColor="rgba(255, 0, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="Image3" top="900" left="320" width="80" height="60" zIndex="39" image="Media/SymbolLib/Media/Pause.svg" imageColor="rgba(255, 0, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="Image4" top="820" left="320" width="80" height="60" zIndex="40" image="Media/SymbolLib/Media/Pause.svg" imageColor="rgba(255, 0, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="Image5" top="740" left="320" width="80" height="60" zIndex="41" image="Media/SymbolLib/Symbols/On.svg" imageColor="rgba(0, 255, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="Image7" top="900" left="320" width="80" height="60" zIndex="42" image="Media/SymbolLib/Symbols/On.svg" imageColor="rgba(0, 255, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="Image8" top="980" left="320" width="80" height="60" zIndex="43" image="Media/SymbolLib/Symbols/On.svg" imageColor="rgba(0, 255, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="Image9" top="740" left="320" width="80" height="60" zIndex="44" image="Media/SymbolLib/Symbols/EngineMove.svg" imageColor="rgba(0, 255, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="Image10" top="820" left="320" width="80" height="60" zIndex="45" image="Media/SymbolLib/Symbols/EngineMove.svg" imageColor="rgba(0, 255, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="Image12" top="900" left="320" width="80" height="60" zIndex="46" image="Media/SymbolLib/Symbols/EngineMove.svg" imageColor="rgba(0, 255, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="Image11" top="980" left="320" width="80" height="60" zIndex="47" image="Media/SymbolLib/Symbols/EngineMove.svg" imageColor="rgba(0, 255, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="Image6" top="820" left="320" width="80" height="60" zIndex="48" image="Media/SymbolLib/Symbols/On.svg" imageColor="rgba(0, 255, 0, 1)" visible="false" />
+  </Widgets>
+</Content>

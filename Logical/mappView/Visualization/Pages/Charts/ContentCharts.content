@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentCharts" height="1100" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.OnlineChart" id="OnlineChart1" top="59" left="0" width="860" height="478" zIndex="0" autoscale="true" permissionOperate="['Operator', 'Service']">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.OnlineChartYAxis" id="OnlineChartYAxis1" zIndex="0" axisLabel="X Position [mm]" unit="{'metric':'MM','imperial':'MM','imperial-us':'MM'}" axisColor="rgba(255, 0, 0, 1)" disabledAxisColor="rgba(255, 0, 0, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.OnlineChartGraph" id="OnlineChartGraph1" zIndex="0" minValue="-100" xAxisRefId="OnlineChartTimeAxis1" lineColor="rgba(255, 0, 0, 1)" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.OnlineChartTimeAxis" id="OnlineChartTimeAxis1" zIndex="1" axisLabel="Time [mm:ss]">
+          <Widgets />
+        </Widget>
+        <Widget xsi:type="widgets.brease.OnlineChartYAxis" id="OnlineChartYAxis3" zIndex="2" axisLabel="X Velocity [mm/s]" axisColor="rgba(0, 128, 0, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.OnlineChartGraph" id="OnlineChartGraph3" zIndex="0" maxValue="10000" minValue="-10000" xAxisRefId="OnlineChartTimeAxis1" lineColor="rgba(0, 128, 0, 1)" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.OnlineChart" id="OnlineChart2" top="59" left="860" width="861" height="480" zIndex="1" autoscale="true" permissionOperate="['Operator', 'Service']">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.OnlineChartTimeAxis" id="OnlineChartTimeAxis2" zIndex="0" axisLabel="Time [mm:ss]">
+          <Widgets />
+        </Widget>
+        <Widget xsi:type="widgets.brease.OnlineChartYAxis" id="OnlineChartYAxis2" zIndex="1" axisLabel="Y Position [mm]" unit="{'metric':'MM','imperial':'MM','imperial-us':'MM'}" axisColor="rgba(255, 0, 0, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.OnlineChartGraph" id="OnlineChartGraph2" zIndex="0" maxValue="400" minValue="-100" xAxisRefId="OnlineChartTimeAxis2" lineColor="rgba(255, 0, 0, 1)" fillColor="rgba(255, 255, 255, 0)" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.OnlineChartYAxis" id="OnlineChartYAxis5" zIndex="2" axisLabel="Y Velocity [mm/s]" axisColor="rgba(0, 128, 0, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.OnlineChartGraph" id="OnlineChartGraph5" zIndex="0" maxValue="10000" minValue="-10000" xAxisRefId="OnlineChartTimeAxis2" lineColor="rgba(0, 128, 0, 1)" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.OnlineChart" id="OnlineChart3" top="620" left="0" width="860" height="480" zIndex="2" autoscale="true" permissionOperate="['Operator', 'Service']">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.OnlineChartTimeAxis" id="OnlineChartTimeAxis3" zIndex="0" axisLabel="Time [mm:ss]">
+          <Widgets />
+        </Widget>
+        <Widget xsi:type="widgets.brease.OnlineChartYAxis" id="OnlineChartYAxis4" zIndex="1" axisLabel="Z Position [mm]" unit="{'metric':'MM','imperial':'MM','imperial-us':'MM'}" axisColor="rgba(255, 0, 0, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.OnlineChartGraph" id="OnlineChartGraph4" zIndex="0" maxValue="300" xAxisRefId="OnlineChartTimeAxis3" lineColor="rgba(255, 0, 0, 1)" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.OnlineChartYAxis" id="OnlineChartYAxis6" zIndex="2" axisLabel="Z Velocity [mm/s]" axisColor="rgba(0, 128, 0, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.OnlineChartGraph" id="OnlineChartGraph6" zIndex="0" maxValue="10000" minValue="-10000" xAxisRefId="OnlineChartTimeAxis3" lineColor="rgba(0, 128, 0, 1)" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.OnlineChart" id="OnlineChart4" top="620" left="859" width="860" height="480" zIndex="3" permissionOperate="['Operator', 'Service']">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.OnlineChartTimeAxis" id="OnlineChartTimeAxis4" zIndex="0" axisLabel="Time [mm:ss]">
+          <Widgets />
+        </Widget>
+        <Widget xsi:type="widgets.brease.OnlineChartYAxis" id="OnlineChartYAxis8" zIndex="1" axisLabel="S Velocity [Revolutions/s]" axisColor="rgba(0, 128, 0, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.OnlineChartGraph" id="OnlineChartGraph8" zIndex="0" maxValue="200" minValue="-200" xAxisRefId="OnlineChartTimeAxis4" lineColor="rgba(0, 128, 0, 1)" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="399" width="163" height="36" zIndex="4" text="$IAT/XW" borderWidth="2px" borderColor="rgba(100, 100, 100, 1)" borderStyle="solid" textAlign="center" style="Caption" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="580" left="399" width="163" height="36" zIndex="5" text="$IAT/XZ" borderWidth="2px" borderColor="rgba(100, 100, 100, 1)" borderStyle="solid" textAlign="center" style="Caption" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="20" left="1260" width="163" height="36" zIndex="6" text="$IAT/XY" borderWidth="2px" borderColor="rgba(100, 100, 100, 1)" borderStyle="solid" textAlign="center" style="Caption" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="580" left="1260" width="163" height="36" zIndex="7" text="$IAT/XS" borderWidth="2px" borderColor="rgba(100, 100, 100, 1)" borderStyle="solid" textAlign="center" style="Caption" />
+  </Widgets>
+</Content>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="gAlarmXCore" Type="mpalarmxcore">
+    <Group ID="mapp.AlarmX.Core.Configuration">
+      <Group ID="[0]">
+        <Property ID="Name" Value="EmergButton" />
+        <Property ID="Message" Value="Emergency button has been pushed" />
+        <Property ID="Severity" Value="20" />
+      </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="Elem2Small" />
+        <Property ID="Message" Value="Element is too small" />
+        <Property ID="Severity" Value="10" />
+      </Group>
+      <Group ID="[2]">
+        <Property ID="Name" Value="PowerOff" />
+        <Property ID="Message" Value="Unexpected  Power Off  event" />
+        <Property ID="Severity" Value="20" />
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

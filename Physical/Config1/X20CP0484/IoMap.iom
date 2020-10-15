@@ -1,0 +1,5 @@
+VAR_CONFIG
+	::gdoProcessLamp AT %QX."X20DO9322".DigitalOutput01;
+	::gdoMillingLamp AT %QX."X20DO9322".DigitalOutput02;
+	::Program1:Sensor AT %IX."X20DI9371".DigitalInput01;
+END_VAR

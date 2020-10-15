@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentAlarms" height="1100" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.AlarmList" id="AlarmList1" top="100" left="60" width="1580" height="700" zIndex="0" itemsPerPage="12" permissionOperate="['Operator', 'Service']">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem1" width="280" zIndex="0" columnType="timestamp" text="Date and Time" />
+        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem2" width="500" zIndex="1" text="Alarm Message" />
+        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem3" zIndex="2" columnType="state" text="Alarm State" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton1" top="860" left="80" width="360" height="60" zIndex="1" text="$IAT/ackemerg" backColor="rgba(105, 105, 105, 1)" textColor="rgba(255, 255, 255, 1)" permissionOperate="['Operator', 'Service']" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton2" top="860" left="1460" width="200" height="60" zIndex="2" text="$IAT/AckALL" backColor="rgba(105, 105, 105, 1)" textColor="rgba(255, 255, 255, 1)" permissionOperate="['Operator', 'Service']" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton3" top="940" left="80" width="360" height="60" zIndex="3" text="$IAT/acke2short" backColor="rgba(105, 105, 105, 1)" textColor="rgba(255, 255, 255, 1)" permissionOperate="['Operator', 'Service']" />
+    <Widget xsi:type="widgets.brease.PushButton" id="AckSelected" top="860" left="500" width="360" height="60" zIndex="4" text="$IAT/ackSelect" backColor="rgba(105, 105, 105, 1)" textColor="rgba(255, 255, 255, 1)" permissionOperate="['Operator', 'Service']" />
+  </Widgets>
+</Content>

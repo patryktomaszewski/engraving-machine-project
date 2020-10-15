@@ -1,0 +1,117 @@
+(*axis and program configuration and functionality*)
+VAR
+	MpCnc3Axis_0 : MpCnc3Axis; (*3 axis Group*)
+	Xaxis : MpAxisBasic; (*X axis func*)
+	Yaxis : MpAxisBasic; (*Y axis func*)
+	Zaxis : MpAxisBasic; (*Z axis func*)
+	Saxis : MpAxisBasic; (*S axis func*)
+	CncParameters_3Axis : MpCnc3AxisParType; (*axis group parameters*)
+	X_param : MpAxisBasicParType; (*X axis parameters*)
+	Y_param : MpAxisBasicParType; (*Y axis parameters*)
+	Z_param : MpAxisBasicParType; (*Z axis parameters*)
+	S_param : MpAxisBasicParType; (*S axis parameters*)
+	ServoStatus : ServoStatusEnum; (*machine states*)
+	WorkingMode : WorkingModeEnum; (*woking mode states*)
+END_VAR
+(*automatic mode*)
+VAR
+	AutoModeStatus : AutoModeStatusEnum; (*automatic mode states*)
+	ChooseProgr : ChooseProgrEnum; (*enum with cnc programs*)
+	StopMode : BOOL; (*ON/OFF stop mode*)
+	AutomaticON : BOOL; (*ON/OFF automatic mode*)
+	Sensor : BOOL; (*Sensor on off*)
+	LengthStart : LREAL; (*start obj position*)
+	LengthEnd : LREAL; (*end obj position*)
+	ChooseElemNumber : USINT;
+	Elements2Done : INT; (*processed elements*)
+	NumOfElem : INT; (*Choose number of elem to process*)
+	ObjLength : LREAL; (*length of obj*)
+	CentreX : LREAL; (*obj centre X axis*)
+END_VAR
+VAR CONSTANT
+	CentreY : LREAL := 200; (*obj centre Y axis*)
+END_VAR
+(*manual mode*)
+VAR
+	ManualON : BOOL; (*ON/oFF Manual mode*)
+	ManualModeStatus : ManualModeStatusEnum; (*manual mode states*)
+	ManXPos : LREAL; (*choose x pos*)
+	ManYPos : LREAL; (*choose y pos*)
+	ManZPos : LREAL; (*choose z pos*)
+	ManSPos : LREAL; (*choose s pos*)
+	ManXVel : REAL; (*choose x vel*)
+	AsignProp : AsignPropEnum; (*states in which y can choose axis to move in manual mode*)
+	ManYVel : REAL; (*choose y vel*)
+	ManZVel : REAL; (*choose z vel*)
+	ManSVel : REAL; (*choose s vel*)
+	X2Move : BOOL; (*choose x axis to move*)
+	Y2Move : BOOL; (*choose y axis to move*)
+	Z2Move : BOOL; (*choose z axis to move*)
+	S2Move : BOOL; (*choose s axis to move*)
+	Moveaxis : BOOL; (*comfirms axis move in manual mode*)
+END_VAR
+(*jogging*)
+VAR
+	JogStatus : JogStatusEnum; (*jog mode states*)
+	JogUpX : BOOL; (*jog x forward*)
+	JogDownX : BOOL; (*jog x backward*)
+	JogUpY : BOOL; (*jog y forward*)
+	JogDownY : BOOL; (*jog y backward*)
+	JogUpZ : BOOL; (*jog z gorward*)
+	JogDownZ : BOOL; (*jog z backward*)
+	JogUpS : BOOL; (*jog s forward*)
+	JogDownS : BOOL; (*jog s backward*)
+	JogModeOn : BOOL; (*on offf joging mode*)
+END_VAR
+(*visualization (variables needed to show process icons)*)
+VAR
+	Proccessing : BOOL;
+	YOff : BOOL;
+	Ymove : BOOL;
+	YOn : BOOL;
+	XOff : BOOL;
+	Xmove : BOOL;
+	XOn : BOOL;
+	ZOff : BOOL;
+	Zmove : BOOL;
+	ZOn : BOOL;
+	SOff : BOOL;
+	Smove : BOOL;
+	SOn : BOOL;
+	ActMode4MV : STRING[80]; (*Helps display actual mode in mappView *)
+END_VAR
+(*AlarmSystem*)
+VAR
+	EmergStop : BOOL; (*Emergency Stop Button. Stops machine *)
+	MpAlarmXCore_0 : MpAlarmXCore;
+END_VAR
+VAR CONSTANT
+	cmdErrorReset : BOOL := FALSE;
+END_VAR
+VAR
+	SetAlarmEmerg : USINT;
+	cmdSetAlarm : BOOL;
+	AckALL : MpAlarmXAcknowledgeAll;
+	EmergStopAck : BOOL;
+	AckAllButton : BOOL;
+	Elem2SmallAck : BOOL;
+	Elem2Small : BOOL;
+	WarningSymbol1 : BOOL;
+	WarningSymbol2 : BOOL;
+	ShowWarning : BOOL;
+END_VAR
+(*Alarm History*)
+VAR
+	MpAlarmXHistory_0 : MpAlarmXHistory;
+	MpAlarmXHistoryUI_0 : MpAlarmXHistoryUI;
+	MpAlarmXListUI_0 : MpAlarmXListUI;
+	MpAlarmXListUIConnectType_0 : MpAlarmXListUIConnectType;
+	AlarmXHistoryUIConnect : MpAlarmXHistoryUIConnectType;
+END_VAR
+(*Visualization plc Open state*)
+VAR
+	XState : STRING[80];
+	YState : STRING[80];
+	ZState : STRING[80];
+	SState : STRING[80];
+END_VAR
